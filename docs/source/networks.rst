@@ -53,6 +53,11 @@ Layers
 .. autoclass:: GaussianFilter
     :members:
 
+`Spatial Transforms`
+~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: monai.networks.layers.AffineTransform
+    :members:
+
 `Utilities`
 ~~~~~~~~~~~
 .. automodule:: monai.networks.layers.convutils
