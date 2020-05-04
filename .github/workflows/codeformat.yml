@@ -1,0 +1,15 @@
+name: format
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [labeled]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test ${{ github.event.pull_request.labels.*.name }}
+      run: |
+        echo "test"
