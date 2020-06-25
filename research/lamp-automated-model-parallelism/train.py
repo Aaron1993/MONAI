@@ -110,7 +110,9 @@ def train(n_feat, crop_size, bs, ep, optimizer="rmsprop", lr=5e-4, pretrain=None
                     rotate_range=(np.pi/12, np.pi/12, np.pi/12),
                     shear_range=(np.pi/18, np.pi/18, np.pi/18),
                     translate_range=(sz * 0.05 for sz in crop_size),
-                    scale_range=(0.2, 0.2, 0.2)
+                    scale_range=(0.2, 0.2, 0.2),
+                    mode=("bilinear", "nearest"),
+                    padding_mode=("border", "zeros"),
                 )
             ]
         )
